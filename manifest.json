@@ -11,14 +11,8 @@
     },
    "content_scripts": [
     {
-        "matches": [
-            "https://sisregiiihomologacao.saude.gov.br/",
-            "https://sisregiiitreinamento.saude.gov.br/",
-            "https://sisregiii.saude.gov.br/"
-        ],
-        "css": ["../css/style.css"],
-        "js": ["../js/Content.js"],
-        "html":["../cancel.html"]
+        "matches": ["https://sisregiiihomologacao.saude.gov.br/","https://sisregiiitreinamento.saude.gov.br/","https://sisregiii.saude.gov.br/","https://sisregiii.saude.gov.br/cgi-bin/index" ],        
+        "js": ["Content.js"]        
     }
 ] 
 }
