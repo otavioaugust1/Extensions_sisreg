@@ -1,0 +1,24 @@
+{
+   "name": "SISREG_PLUS ++",
+   "description": "Adiciona novas funcionalidades ao SISREG",
+   "version": "1.0",
+   "manifest_version": 3,
+   "author":{
+        "My Name":"Otavio Augusto",
+        "My e-mail":"otavio.santos@saude.gov.br",
+        "My Whatsapp":"55 61 ****",
+        "Location":"Brazil, DF, Brasilia"
+    },
+   "content_scripts": [
+    {
+        "matches": [
+            "https://sisregiiihomologacao.saude.gov.br/",
+            "https://sisregiiitreinamento.saude.gov.br/",
+            "https://sisregiii.saude.gov.br/"
+        ],
+        "css": ["../css/style.css"],
+        "js": ["../js/Content.js"],
+        "html":["../cancel.html"]
+    }
+] 
+}
