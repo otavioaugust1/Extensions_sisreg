@@ -12,7 +12,7 @@ const INTERNAL = setInterval(()=>{
         BARRA_SUP.style.color = "#F5F5F5";
         BARRA_SUP.style.background = "#64DD17"
         BARRA_SUP.style.fontSize = "1.6rem";
-        BARRA_SUP.style.
+      
         BARRA_SUP.style.border = "none";
 
 // --------- DECLARAÇÃO DE MENU ----------------------//        
@@ -20,6 +20,7 @@ const INTERNAL = setInterval(()=>{
         const MENU_CANCELAMENTO = document.createElement("a");
         MENU_CANCELAMENTO.innerHTML = "CANCELAR AUTOMATICAMENTE ";
         MENU_CANCELAMENTO.style.color = "#F5F5F5";
+        MENU_CANCELAMENTO.style.height = "auto";
         MENU_CANCELAMENTO.classList.add("cancelandoDevolvidosNx");
 
         const BARRA_PROGRESSO = document.createElement("progress"); 
@@ -43,7 +44,10 @@ const INTERNAL = setInterval(()=>{
                     const TEMPO_RESTANTE = setInterval(()=>{
 
 // -- DECLARAÇÃO MENSAGEM COLOCADA NO CANCELAMENTO ---// 
-                        let justifica = "Devido ao tempo decorrido sem reenvio/reavaliação/resposta a orientação registrada pelo profissional Regulador, a Gerência de Regulação Ambulatorial realiza o cancelamento administrativo. Orientamos que caso o paciente ainda necessite e procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente.";
+
+                        let justifica = "A Central de Regulação Ambulatorial efetuou o cancelamento administrativo desta solicitação por falta de reenvio/reavaliação/resposta/informações registradas pelo profissional Regulador de sua central ao longo do tempo. Recomendamos que, caso o paciente ainda necessite de agendamento para o atendimento, procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente."
+                                                
+                   /* Devido ao tempo decorrido sem reenvio/reavaliação/resposta a orientação registrada pelo profissional Regulador, a Gerência de Regulação Ambulatorial realiza o cancelamento administrativo. Orientamos que caso o paciente ainda necessite e procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente.*/
                         
                         let url = "https://sisregiiitreinamento.saude.gov.br/cgi-bin/cons_verificar?etapa=CANCELAR_SOLICITACAO&co_seq_solicitacao="+listaCodSol[index]+"&st_situacao=C&"+"ds_observacao="+justifica;                     
 
@@ -77,4 +81,7 @@ const INTERNAL = setInterval(()=>{
 
 // --------- LISTA DE SOLICITAÇÃO PARA CANCELAR ------//
 
-let listaCodSol = ["100072671"]
+let listaCodSol = [
+    "100072671",
+    "100072669"
+]
