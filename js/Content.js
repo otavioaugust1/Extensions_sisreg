@@ -2,7 +2,7 @@
 
 const INTERNAL = setInterval(()=>{
     const BARRA_MENU = document.querySelector("#barraMenu");
-    const BARRA_SUP = document.querySelector("#barraSistemaSup");
+    const BARRA_SUP = document.querySelector("#barraSuperior");
     
 //--------------- BARRA SUPERIOR----------------------//
 
@@ -91,3 +91,4 @@ var listaCodSol = [
 "12371497",
 "12472848"
 ]
+console.log('funcionando... ')
