@@ -14,9 +14,8 @@
         "matches": [
             "https://sisregiiihomologacao.saude.gov.br/",
             "https://sisregiiitreinamento.saude.gov.br/",
-            "https://sisregiii.saude.gov.br/",
-            "https://sisregiii.saude.gov.br/cgi-bin/index",
-            "https://sisregiiitreinamento.saude.gov.br/cgi-bin/index"
+            "https://sisregiiitreinamento.saude.gov.br/cgi-bin/index",
+            "https://sisregiii.saude.gov.br/cgi-bin/index"           
         ],        
         "js": ["js/Content.js"]        
     }
