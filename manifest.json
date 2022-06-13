@@ -1,8 +1,11 @@
 {
-   "name": "SISREG_PLUS ++",
+   "name": "SISREG_++",
    "description": "Adiciona novas funcionalidades ao SISREG",
-   "version": "1.0",
-   "manifest_version": 3,
+   "version": "1.1",
+   "manifest_version": 2,
+   "browser_action":{
+        "default_popup": "popup.html"
+   },
    "author":{
         "My Name":"Otavio Augusto",
         "My e-mail":"otavio.santos@saude.gov.br",
@@ -19,5 +22,5 @@
         ],        
         "js": ["js/Content.js"]        
     }
-] 
+    ] 
 }

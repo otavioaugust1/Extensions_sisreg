@@ -14,3 +14,14 @@ function csv_To_Array(str, delimiter = ",") {
     return arr;
   }
 
+//        const MENU_DEVOLVER_PENDENTE = document.createElement("b");
+//        MENU_DEVOLVER_PENDENTE.innerHTML = " DEVOLVER SOLICITACAO   ";
+//        MENU_DEVOLVER_PENDENTE.style.color = "#F5F5F5";
+//        MENU_DEVOLVER_PENDENTE.style.height = "auto";
+//        MENU_DEVOLVER_PENDENTE.classList.add("cancelandoDevolvidosNx");
+
+//        BARRA_MENU.appendChild(MENU_DEVOLVER_PENDENTE);
+
+
+ /* Devido ao tempo decorrido sem reenvio/reavaliação/resposta a orientação registrada pelo profissional Regulador, a Gerência de Regulação Ambulatorial realiza o cancelamento administrativo. Orientamos que caso o paciente ainda necessite e procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente.*/
+                        
