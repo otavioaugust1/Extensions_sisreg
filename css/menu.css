@@ -1,14 +1,23 @@
+*{
+    margin: .2em;
+}
 
+body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #006837 0%, #ffff) 100%;
+}
 
 .barraInferior {
     margin: 0 auto;
     padding: 1em;
-    background: #64DD17;
+    background: #006837;
     text-align: center;
     font-size: large;
 }
 
-form {
+form {  
     margin: 0 auto;
     width: 400px;
     padding: 1em;
@@ -16,42 +25,24 @@ form {
     border-radius: 1em;
 }
 
-form div + div {
-    margin-top: 1em;
-}
-
 label {
     display: inline-block;
     text-align: center;
+    color: black;
 }
 
 input, textarea {
     font: 1em sans-serif;
     width: 300px;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
 }
 
-input:focus, textarea:focus {
-    border-color: #000;
-}
-
-.button {
-    /* Para posicionar os botões para a mesma posição dos campos de texto */
-    padding-left: 90px;
-    align-items: auto;  /* mesmo tamanho que os elementos do tipo label */
-}
-
-#tempo{
-    align-items: auto;
-    margin-left: .6em;
-}
-
-
-#funcoes {
-    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
-    margin-top: 10em;
-    align-items: auto;
-
+.funcoes button {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    
 }

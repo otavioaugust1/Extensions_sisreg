@@ -4,44 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Otavio Augusto">    
     <link rel="stylesheet" href="/css/menu.css" type="text/css" media="all" charset="utf-8" />
-    <title>Configuração</title>
-
+    <title>Menu</title>
 </head>
+
 <body>
-   <div class="geral">
-        <div id="barraSuperior">
-            
-        </div>
-   </div>
    <div class="barraInferior">
-        <span class="descricao">CANCELAR SOLICITAÇÕES DEVOLVIDAS EM MASSA</span>        
+        <span class="descricao">CANCELAR SOLICITAÇÕES DEVOLVIDAS +90 DIAS </span>        
    </div>
    <div class="mensagemCancelamento">
      <from action="/" method="post">
           <div>
                <label for="mensagemCancelamento">Mensagem do cancelamento das solicitações devolvidas:</label><br> 
-               <textarea name="mensagemCancelamento" id="mensagemCancelamento" cols="30" rows="10">A Central de Regulação Ambulatorial efetuou o cancelamento administrativo desta solicitação por falta de reenvio/reavaliação/resposta/informações registradas pelo profissional Regulador de sua central ao longo do tempo. Recomendamos que, caso o paciente ainda necessite de agendamento para o atendimento, procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente.</textarea>
-               <input type="button" value="Salvar Mensagem" onclick="msg()">
+               <textarea name="mensagemCancelamento" id="mensagemCancelamento" cols="30" rows="10"></textarea>
+               <input type="button" value="Salvar Mensagem" onclick="msg(text)">
           </div>             
-     </from>        
-   </div>
-   <div class="tempo">
-    Tempo que a solicitação esta parada em dias:
-    <div class = dias>
-     <button> + </button>
-     90
-     <button> - </button>
-    </div>
-   </div>
-   <div class="funcoes">
-    <button>Pesquisar</button>
-    <button>Cancelar</button>
+     </from>
    </div>
 
-
-
+     <div class="funcoes">
+          <button id="playCancelar">Play</button>
+          <button>Cancelar</button>
+          <button>Historico</button>
+          <button>Zerar</button>
 
 </body>
-     <script src="/js/Content.js"></script>    
+     <script type="text/javasript" src="/js/Cancelar.js"></script>    
 </html>

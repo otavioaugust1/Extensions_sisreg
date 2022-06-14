@@ -1,5 +1,13 @@
 // --------- DECLARAÇÃO DE CONSTANCIAS BARRAS ---------//
 
+
+
+
+
+
+
+
+
 const INTERNAL = setInterval(()=>{
     const BARRA_MENU = document.querySelector("#barraMenu");
     const BARRA_SUP = document.querySelector("#barraSistemaSup");
@@ -8,35 +16,18 @@ const INTERNAL = setInterval(()=>{
 
     if (BARRA_MENU){
         clearInterval(INTERNAL);
-        BARRA_SUP.innerHTML = "CANCELAMENTO/DEVOLUÇÃO - AUTOMÁTICO DE SOLICITAÇÕES";
-        BARRA_SUP.style.color = "#F5F5F5";
-        BARRA_SUP.style.background = "#64DD17"
-        BARRA_SUP.style.fontSize = "1.6rem";
-      
-        BARRA_SUP.style.border = "none";
+        
+// --------- DECLARAÇÃO DE BOTÃO ----------------------//        
 
-// --------- DECLARAÇÃO DE MENU ----------------------//        
-
-        const MENU_CANCEL_DEVOLVIDO = document.createElement("a");
-        MENU_CANCEL_DEVOLVIDO.innerHTML = " CANCELAR DEVOLUÇÃO   ";
-        MENU_CANCEL_DEVOLVIDO.style.color = "#F5F5F5";
-        MENU_CANCEL_DEVOLVIDO.style.height = "auto";
-        MENU_CANCEL_DEVOLVIDO.classList.add("cancelandoDevolvidosNx");
-
-        const BARRA_PROGRESSO = document.createElement("progress"); 
-        BARRA_PROGRESSO.classList.add("barraProgressoNx");
-
-        BARRA_MENU.appendChild(MENU_CANCEL_DEVOLVIDO);
-        BARRA_MENU.appendChild(BARRA_PROGRESSO);
-
-// --------- DECLARAÇÃO DO CANCELAMENTO --------------// 
-
-        MENU_CANCEL_DEVOLVIDO.addEventListener("click", () => {
+        const BOTAO_CANCEL_DEVOLVIDO = document.getElementById("playCancelar")              
+        BOTAO_CANCEL_DEVOLVIDO.addEventListener("click", () => {
+            
             let qtdeCancelamentos = prompt("Tenho "+listaCodSol.length+" solicitações para cancelar. Quantas devo cancelar? Informe a quantidade.");
+            
             if (qtdeCancelamentos > listaCodSol.length || qtdeCancelamentos <= 0){
-                alert("Quantidade digitada não pode ser maior que o total apresentado a você. E nem zero ou menor que zero.");
+                alert("Quantidade digitada não pode ser maior que o total apresentado a você. E nem zero ou menor que zero.")
             }
-            else {
+            else{
                 let numFinal =  qtdeCancelamentos;
                 if (window.confirm("Tem certeza que devo cancelar "+ numFinal+" solicitações?")){
                     let index = 0;
@@ -45,7 +36,7 @@ const INTERNAL = setInterval(()=>{
 
 // -- DECLARAÇÃO MENSAGEM COLOCADA NO CANCELAMENTO ---// 
 
-                        let justifica = "A Central de Regulação Ambulatorial efetuou o cancelamento administrativo desta solicitação por falta de reenvio/reavaliação/resposta/informações registradas pelo profissional Regulador de sua central ao longo do tempo. Recomendamos que, caso o paciente ainda necessite de agendamento para o atendimento, procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente."
+                        let justifica = msg.text
                  
                         let url = "https://sisregiii.saude.gov.br/cgi-bin/gerenciador_solicitacao?etapa=CANCELAR_SOLICITACAO&co_seq_solicitacao="+listaCodSol[index]+"&st_situacao=C&ds_observacao="+justifica;                     
 

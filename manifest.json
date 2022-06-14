@@ -20,7 +20,7 @@
             "https://sisregiiitreinamento.saude.gov.br/cgi-bin/index",
             "https://sisregiii.saude.gov.br/cgi-bin/index"           
         ],        
-        "js": ["js/Content.js"]        
+        "js": ["js/Cancelar.js"]        
     }
     ] 
 }

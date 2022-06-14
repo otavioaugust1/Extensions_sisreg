@@ -25,3 +25,13 @@ function csv_To_Array(str, delimiter = ",") {
 
  /* Devido ao tempo decorrido sem reenvio/reavaliação/resposta a orientação registrada pelo profissional Regulador, a Gerência de Regulação Ambulatorial realiza o cancelamento administrativo. Orientamos que caso o paciente ainda necessite e procure a Unidade de Saúde em busca de atendimento, uma nova solicitação deverá ser inserida seguindo a orientação do Regulador e protocolo de acesso vigente.*/
                         
+
+
+ colocar regra para o cancelamento
+ colocar historico... 
+ colocar botão zerar...
+ colacar botão cancelar/parar
+
+ colocar possibilidade de editar texto de cancelamento...
+
+ ver
