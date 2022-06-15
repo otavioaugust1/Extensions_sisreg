@@ -38,7 +38,7 @@ const INTERNAL = setInterval(()=>{
             }
             else {
                 let numFinal =  qtdeCancelamentos;
-                if (window.confirm("Tem certeza que devo cancelar "+ numFinal+" solicitações?")){
+                if (window.confirm(`Tem certeza que devo cancelar ${numFinal} solicitações`)){
                     let index = 0;
                     BARRA_PROGRESSO.max = numFinal;
                     const TEMPO_RESTANTE = setInterval(()=>{
