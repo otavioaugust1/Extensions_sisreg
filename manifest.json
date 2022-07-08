@@ -2,7 +2,7 @@
    "name": "SISREG_++",
    "description": "Adiciona novas funcionalidades ao SISREG",
    "version": "1.1",
-   "manifest_version": 2,
+   "manifest_version": 3,
    "browser_action":{
         "default_popup": "popup.html"
    },
@@ -17,10 +17,9 @@
         "matches": [
             "https://sisregiiihomologacao.saude.gov.br/",
             "https://sisregiiitreinamento.saude.gov.br/",
-            "https://sisregiiitreinamento.saude.gov.br/cgi-bin/index",
             "https://sisregiii.saude.gov.br/cgi-bin/index"           
         ],        
-        "js": ["js/Cancelar.js"]        
+        "js": ["js/Content.js"]        
     }
     ] 
 }
